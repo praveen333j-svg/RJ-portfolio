@@ -1,0 +1,22 @@
+site_name: "Ranga Jayasinghe"
+site_description: "Enterprise Transformation Leader | Banking, Cards & Payments"
+site_author: "Ranga Jayasinghe"
+
+theme:
+  name: "material"
+  palette:
+    - scheme: "slate"
+      primary: "amber"
+      accent: "blue"
+  features:
+    - "navigation.tabs"
+    - "navigation.sections"
+    - "toc.integrate"
+
+nav:
+  - "Home": "index.md"
+  - "Value Proposition": "value-proposition.md"
+  - "Leadership": "leadership.md"
+  - "Experience & Delivery": "experience.md"
+  - "Executive Playbooks":
+    - "The Cutover Playbook": "playbooks/cutover-strategy.md"

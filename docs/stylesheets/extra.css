@@ -295,3 +295,281 @@
 strong {
   color: rgba(255,255,255,0.95);
 }
+
+/* ════════════════════════════════════════
+   CUTOVER FAILURE EQUATION
+   ════════════════════════════════════════ */
+
+.ceq-wrapper {
+  margin: 32px 0;
+}
+
+/* Intro / formula text */
+.ceq-intro {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.ceq-formula-text {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: rgba(255,255,255,0.65);
+  margin: 0 0 6px;
+  letter-spacing: 0.3px;
+}
+
+.ceq-tagline {
+  font-size: 0.82rem;
+  color: #00d4d8;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Formula boxes row */
+.ceq-boxes {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.ceq-box {
+  background: #111827;
+  border: 2px solid rgba(0,212,216,0.4);
+  border-radius: 6px;
+  padding: 14px 16px;
+  text-align: center;
+  flex: 1;
+  min-width: 110px;
+  max-width: 155px;
+}
+
+.ceq-box-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.ceq-box-sub {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.45);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.ceq-box-impact {
+  background: rgba(0,212,216,0.12);
+  border-color: #00d4d8;
+  border-width: 2px;
+}
+
+.ceq-box-impact .ceq-box-title {
+  color: #00d4d8;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.ceq-operator {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.3);
+  display: flex;
+  align-items: center;
+  padding: 0 2px;
+  flex-shrink: 0;
+}
+
+/* Column grid: 1fr [2fr decision group] 1fr */
+.ceq-columns {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+/* Outer columns */
+.ceq-col {
+  background: #111827;
+  border: 1px solid rgba(0,212,216,0.2);
+  border-top: 3px solid #00d4d8;
+  border-radius: 0 0 4px 4px;
+  padding: 16px;
+}
+
+/* Decision bracket group */
+.ceq-decision-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.ceq-decision-bracket {
+  background: rgba(0,212,216,0.08);
+  border: 1px solid rgba(0,212,216,0.35);
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #00d4d8;
+}
+
+.ceq-decision-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid rgba(0,212,216,0.35);
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  overflow: hidden;
+}
+
+.ceq-decision-inner .ceq-col {
+  border: none;
+  border-top: 3px solid #00d4d8;
+  border-radius: 0;
+  background: #111827;
+}
+
+.ceq-decision-inner .ceq-col:first-child {
+  border-right: 1px solid rgba(0,212,216,0.2);
+}
+
+/* Column internals */
+.ceq-col-time {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #00d4d8;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.ceq-col-header {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0,212,216,0.15);
+}
+
+.ceq-col-note {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.5);
+  font-style: italic;
+  margin: 0 0 10px;
+  line-height: 1.5;
+}
+
+.ceq-badge {
+  display: inline-block;
+  background: rgba(0,212,216,0.12);
+  border: 1px solid rgba(0,212,216,0.5);
+  color: #00d4d8;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+/* Lists */
+.ceq-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.ceq-list li {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.68);
+  padding: 4px 0 4px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  position: relative;
+  line-height: 1.4;
+}
+
+.ceq-list li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: #00d4d8;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* Sub-sections inside Execute column */
+.ceq-sub-section {
+  margin-bottom: 4px;
+}
+
+.ceq-sub-header {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #00d4d8;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 14px 0 6px;
+}
+
+.ceq-integrity-note {
+  margin-top: 14px;
+  background: rgba(0,212,216,0.07);
+  border-left: 3px solid #00d4d8;
+  padding: 8px 12px;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.75);
+  font-style: italic;
+  border-radius: 0 4px 4px 0;
+  line-height: 1.5;
+}
+
+/* Timing bar */
+.ceq-timing-bar {
+  margin-top: 16px;
+  text-align: center;
+  padding: 12px 20px;
+  background: rgba(0,212,216,0.05);
+  border: 1px solid rgba(0,212,216,0.18);
+  border-radius: 4px;
+}
+
+.ceq-timing-label {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.45);
+  margin-right: 8px;
+}
+
+.ceq-timing-value {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #00d4d8;
+}
+
+/* Responsive — stack on small screens */
+@media (max-width: 768px) {
+  .ceq-columns {
+    grid-template-columns: 1fr;
+  }
+  .ceq-decision-inner {
+    grid-template-columns: 1fr;
+  }
+  .ceq-decision-inner .ceq-col:first-child {
+    border-right: none;
+    border-bottom: 1px solid rgba(0,212,216,0.2);
+  }
+  .ceq-boxes {
+    justify-content: flex-start;
+  }
+  .ceq-box {
+    min-width: 80px;
+    padding: 10px 12px;
+  }
+}

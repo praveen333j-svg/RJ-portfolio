@@ -13,8 +13,8 @@
   --md-primary-fg-color:           #00d4d8;
   --md-primary-fg-color--light:    #33dcdf;
   --md-primary-fg-color--dark:     #00b0b4;
-  --md-primary-bg-color:           #0a0f1e;
-  --md-primary-bg-color--light:    rgba(0,212,216,0.1);
+  --md-primary-bg-color:           #ffffff;
+  --md-primary-bg-color--light:    rgba(255,255,255,0.7);
 
   --md-accent-fg-color:            #00d4d8;
   --md-accent-fg-color--transparent: rgba(0,212,216,0.1);

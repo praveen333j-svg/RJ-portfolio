@@ -1,8 +1,17 @@
+<div class="profile-header">
+  <img src="assets/profile-ranga.png" alt="Ranga Jayasinghe" class="profile-photo" />
+  <div class="profile-text">
+
 # Ranga Jayasinghe
 
 **Enterprise Transformation Leader | Banking, Cards & Payments**
 
 *Transformation is easy to say and hard to deliver well.*
+
+[📄 Download Resume](assets/01-Ranga-Jayasinghe-7-1-.pdf){ .md-button .md-button--primary }
+
+  </div>
+</div>
 
 Drawing on 25+ years in technology, transformation, and delivery leadership, I drive large-scale change across banking, cards, payments, and regulated financial services — spanning enterprise transformation, card platform modernisation, large-scale data migrations, and operational resilience. As cloud, data, and AI reshape financial services, I help organisations modernise safely, strengthen resilience, and deliver across cards, payments, and digital platforms.
 

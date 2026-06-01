@@ -1,3 +1,8 @@
 site/
 cv_final.txt
 parse_cv.py
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc

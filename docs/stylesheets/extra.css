@@ -573,3 +573,32 @@ strong {
     padding: 10px 12px;
   }
 }
+
+/* ── Profile header ── */
+.profile-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 28px;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00d4d8;
+  flex-shrink: 0;
+}
+
+.profile-text {
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

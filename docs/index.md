@@ -1,15 +1,10 @@
 <div class="profile-header">
   <img src="assets/profile-ranga.png" alt="Ranga Jayasinghe" class="profile-photo" />
   <div class="profile-text">
-
-# Ranga Jayasinghe
-
-**Enterprise Transformation Leader | Banking, Cards & Payments**
-
-*Transformation is easy to say and hard to deliver well.*
-
-[📄 Download Resume](assets/01-Ranga-Jayasinghe-7-1-.pdf){ .md-button .md-button--primary }
-
+    <h1>Ranga Jayasinghe</h1>
+    <p><strong>Enterprise Transformation Leader | Banking, Cards & Payments</strong></p>
+    <p><em>Transformation is easy to say and hard to deliver well.</em></p>
+    <a href="assets/01-Ranga-Jayasinghe-7-1-.pdf" class="md-button md-button--primary">📄 Download Resume</a>
   </div>
 </div>
 

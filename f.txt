@@ -1,0 +1,118 @@
+import os
+import shutil
+from difflib import SequenceMatcher
+
+# -------------------------------------------------
+# SETTINGS
+# -------------------------------------------------
+
+# Folder where this script is running
+ROOT_FOLDER = os.path.dirname(os.path.abspath(__file__))
+
+# Destination folder name
+DEST_FOLDER_NAME = "WAPP-FND"
+
+# Keywords related to WhatsApp
+KEYWORDS = [
+    "whatsapp",
+    "whats app",
+    "watsapp",
+    "wapp",
+    "wa",
+    "chat",
+]
+
+# File types to search
+TEXT_FILE_EXTENSIONS = [
+    ".txt",
+    ".csv",
+    ".log",
+    ".json",
+    ".xml",
+    ".html",
+    ".md",
+]
+
+# Similarity threshold
+SIMILARITY_THRESHOLD = 0.65
+
+# -------------------------------------------------
+# CREATE DESTINATION FOLDER
+# -------------------------------------------------
+
+DEST_FOLDER = os.path.join(ROOT_FOLDER, DEST_FOLDER_NAME)
+os.makedirs(DEST_FOLDER, exist_ok=True)
+
+# -------------------------------------------------
+# FUNCTION TO CHECK IF FILENAME MATCHES
+# -------------------------------------------------
+
+def is_whatsapp_related(filename):
+    name = filename.lower()
+
+    # Direct keyword match
+    for keyword in KEYWORDS:
+        if keyword in name:
+            return True
+
+    # Fuzzy matching
+    words = name.replace("_", " ").replace("-", " ").split()
+
+    for word in words:
+        similarity = SequenceMatcher(None, word, "whatsapp").ratio()
+        if similarity >= SIMILARITY_THRESHOLD:
+            return True
+
+    return False
+
+# -------------------------------------------------
+# SEARCH AND COPY FILES
+# -------------------------------------------------
+
+copied_count = 0
+
+for root, dirs, files in os.walk(ROOT_FOLDER):
+
+    # Skip destination folder itself
+    if DEST_FOLDER_NAME in root:
+        continue
+
+    for file in files:
+
+        # Check extension
+        ext = os.path.splitext(file)[1].lower()
+
+        if ext not in TEXT_FILE_EXTENSIONS:
+            continue
+
+        # Check filename similarity
+        if is_whatsapp_related(file):
+
+            source_path = os.path.join(root, file)
+
+            # Avoid duplicate names
+            destination_path = os.path.join(DEST_FOLDER, file)
+
+            counter = 1
+            while os.path.exists(destination_path):
+                name, ext2 = os.path.splitext(file)
+                new_name = f"{name}_{counter}{ext2}"
+                destination_path = os.path.join(DEST_FOLDER, new_name)
+                counter += 1
+
+            try:
+                shutil.copy2(source_path, destination_path)
+                copied_count += 1
+                print(f"[COPIED] {source_path}")
+
+            except Exception as e:
+                print(f"[ERROR] {source_path} -> {e}")
+
+# -------------------------------------------------
+# DONE
+# -------------------------------------------------
+
+print("\n-----------------------------------")
+print(f"Finished. {copied_count} file(s) copied.")
+print(f"Saved into: {DEST_FOLDER}")
+print("-----------------------------------")

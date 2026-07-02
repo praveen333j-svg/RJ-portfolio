@@ -30,4 +30,7 @@ nav:
   - "Leadership": "leadership.md"
   - "Experience & Delivery": "experience.md"
   - "Executive Playbooks":
-    - "The Cutover Playbook": "playbooks/cutover-strategy.md"
+    - "Cutover Playbooks":
+      - "The Cutover Playbook": "playbooks/cutover-strategy.md"
+    - "AI Playbooks":
+      - "AI Security: The Amplification Paradox": "playbooks/ai-security-amplification-paradox.md"

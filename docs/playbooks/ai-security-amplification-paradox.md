@@ -1,4 +1,4 @@
-<span class="section-label">Executive Briefing &amp; Analysis</span>
+<span class="section-label">AI Governance</span>
 
 # AI Security Is No Longer Optional: The Amplification Paradox
 

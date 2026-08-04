@@ -23,7 +23,7 @@ As **cloud, data, and AI** reshape financial services, I help organisations mode
 </div>
 <div class="card">
 <h3>Commercial Growth Through Delivery Credibility</h3>
-<p><strong>I convert delivery excellence into commercial growth.</strong> Without traditional sales ownership, I grew GE Australia from approximately USD 1.5M to USD 10.5M annual revenue, and scaled the Fiserv engagement from USD 3.5M to approximately USD 15M within two years — by building trusted relationships with senior stakeholders, anticipating demand ahead of formal RFP cycles, and establishing the capability needed before competitors had mobilised.</p>
+<p><strong>I convert delivery excellence into commercial growth.</strong> Without traditional sales ownership, I grew GE Australia from approximately USD 2.1M to USD 10.5M annual revenue, and scaled the Fiserv engagement from USD 3.5M to USD 14M — by building trusted relationships with senior stakeholders, anticipating demand ahead of formal RFP cycles, and establishing the capability needed before competitors had mobilised.</p>
 </div>
 <div class="card">
 <h3>Workforce Capability & Scalable Talent</h3>
@@ -46,7 +46,7 @@ As **cloud, data, and AI** reshape financial services, I help organisations mode
 </div>
 <div class="card">
 <h3>Portfolio Growth</h3>
-<p>Grew Fiserv portfolio from USD 3.5M to approximately USD 15M while scaling delivery across a 300+ global team. Scaled GE Capital account 600% from USD 1.5M to USD 10.5M. Cut issue-resolution lead time from 4.5 days to 2 days while directing a USD 6M+ delivery portfolio.</p>
+<p>Grew the Fiserv portfolio from USD 3.5M to USD 14M while leading delivery across 20+ clients and 350+ staff. Grew the GE Capital account from USD 2.1M to USD 10.5M. Cut issue-resolution lead time from 4.5 days to 2 days while directing a USD 6M+ delivery portfolio.</p>
 </div>
 <div class="card">
 <h3>Large-Scale Migration</h3>

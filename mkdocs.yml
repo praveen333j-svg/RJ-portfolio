@@ -1,10 +1,11 @@
 site_url: "https://rdj7.com/"
 site_name: "Ranga Jayasinghe"
-site_description: "Enterprise Transformation Leader | Banking, Cards & Payments"
+site_description: "Enterprise Transformation, AI Governance and Delivery Leadership | Banking, Cards & Payments"
 site_author: "Ranga Jayasinghe"
 
 theme:
   name: "material"
+  custom_dir: "docs/overrides"
   palette:
     - scheme: "slate"
       primary: "teal"
@@ -24,13 +25,23 @@ markdown_extensions:
   - attr_list
   - md_in_html
 
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/ranga-jayasinghe
+
+copyright: "© 2026 Ranga Jayasinghe · Melbourne, Australia · <a href=\"mailto:ranga.p.jayasinghe@outlook.com\">Contact</a> · Independent analysis is personal and does not represent an employer."
+
 nav:
   - "Home": "index.md"
   - "Value Proposition": "value-proposition.md"
   - "Leadership": "leadership.md"
   - "Experience & Delivery": "experience.md"
-  - "Executive Playbooks":
-    - "Cutover Playbooks":
+  - "Insights":
+    - "AI Governance":
+      - "Overview": "insights/ai-governance/index.md"
+      - "Australia's AI Governance Moment": "insights/ai-governance/australias-ai-governance-moment.md"
+      - "The Amplification Paradox": "playbooks/ai-security-amplification-paradox.md"
+    - "Transformation Delivery":
+      - "Overview": "insights/transformation-delivery/index.md"
       - "The Cutover Playbook": "playbooks/cutover-strategy.md"
-    - "AI Playbooks":
-      - "AI Security: The Amplification Paradox": "playbooks/ai-security-amplification-paradox.md"

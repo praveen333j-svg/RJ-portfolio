@@ -1,0 +1,1246 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Enterprise Transformation, AI Governance and Delivery Leadership | Banking, Cards & Payments">
+      
+      
+        <meta name="author" content="Ranga Jayasinghe">
+      
+      
+        <link rel="canonical" href="https://rdj7.com/playbooks/cutover-strategy/">
+      
+      
+        <link rel="prev" href="../../insights/transformation-delivery/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>The Cutover Playbook - Ranga Jayasinghe</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ranga Jayasinghe">
+  <meta property="og:title" content="Ranga Jayasinghe | Enterprise Transformation &amp; AI Governance">
+  <meta property="og:description" content="Enterprise transformation, AI governance and delivery leadership across banking, cards and payments.">
+  <meta property="og:url" content="https://rdj7.com/">
+  <meta property="og:image" content="https://rdj7.com/assets/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ranga Jayasinghe | Enterprise Transformation &amp; AI Governance">
+  <meta name="twitter:description" content="Enterprise transformation, AI governance and delivery leadership across banking, cards and payments.">
+  <meta name="twitter:image" content="https://rdj7.com/assets/social-preview.png">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-cutover-playbook-embracing-the-delta" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Ranga Jayasinghe" class="md-header__button md-logo" aria-label="Ranga Jayasinghe" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ranga Jayasinghe
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The Cutover Playbook
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../value-proposition/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Value Proposition
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../leadership/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Leadership
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../experience/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Experience & Delivery
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../insights/ai-governance/" class="md-tabs__link">
+          
+  
+  
+  Insights
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Ranga Jayasinghe" class="md-nav__button md-logo" aria-label="Ranga Jayasinghe" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Ranga Jayasinghe
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../value-proposition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Value Proposition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Leadership
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experience & Delivery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Insights
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Insights
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insights/ai-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insights/ai-governance/australias-ai-governance-moment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Australia's AI Governance Moment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-security-amplification-paradox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Amplification Paradox
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transformation Delivery
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Transformation Delivery
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insights/transformation-delivery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Cutover Playbook
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Cutover Playbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-cutover-failure-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Cutover Failure Equation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-two-critical-risk-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Two Critical Risk Parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-five-principles-of-cutover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Five Principles of Cutover
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-systems-fail-at-2am" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When Systems Fail at 2AM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When Systems Fail at 2AM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-habit-from-level-1-support-still-applied-today" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Habit From Level 1 Support — Still Applied Today
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-cutover-response-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Cutover Response Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#someone-whose-sole-job-is-managing-the-room" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Someone Whose Sole Job Is Managing the Room
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p><span class="section-label">Transformation Delivery</span></p>
+<h1 id="the-cutover-playbook-embracing-the-delta">The Cutover Playbook: Embracing the Delta</h1>
+<blockquote>
+<p><em>"Don't hope D-Day will be Blue Skies... Be paranoid in the lead-up in a good way. That's how you earn a good night's sleep and wake up confident and full of energy on D-Day."</em></p>
+</blockquote>
+<p><strong>Production Reality:</strong> Testing will never fully replicate production. That is not a failure of capability — it is a structural reality. No matter how mature the test environment or how seasoned the QA team, certain failure modes only become visible for the first time after go-live. The real exposure often sits below the application layer — system-level settings, runtime parameters, and environmental conditions that no test can faithfully replicate.</p>
+<p>Effective risk management begins by acknowledging the delta rather than attempting to eliminate it. The objective is to identify where failure is plausible, and design containment before impact becomes material.</p>
+<hr />
+<h2 id="the-cutover-failure-equation">The Cutover Failure Equation</h2>
+<div class="ceq-wrapper">
+
+  <div class="ceq-intro">
+    <p class="ceq-formula-text">Failure Impact &nbsp;=&nbsp; Detection Delay &nbsp;&times;&nbsp; Decision Delay &nbsp;&times;&nbsp; Execution Delay</p>
+    <p class="ceq-tagline">Minimising any single delay factor reduces overall failure impact exponentially</p>
+  </div>
+
+  <!-- Formula boxes -->
+  <div class="ceq-boxes">
+    <div class="ceq-box ceq-box-detect">
+      <div class="ceq-box-title">Detection<br>Delay</div>
+      <div class="ceq-box-sub">Time to identify and understand the problem</div>
+    </div>
+    <div class="ceq-operator">&times;</div>
+    <div class="ceq-box ceq-box-decide">
+      <div class="ceq-box-title">Decision<br>Delay</div>
+      <div class="ceq-box-sub">Time to decide on containment then recovery path</div>
+    </div>
+    <div class="ceq-operator">&times;</div>
+    <div class="ceq-box ceq-box-execute">
+      <div class="ceq-box-title">Execution<br>Delay</div>
+      <div class="ceq-box-sub">Time to implement the fix and validate</div>
+    </div>
+    <div class="ceq-operator">=</div>
+    <div class="ceq-box ceq-box-impact">
+      <div class="ceq-box-title">FAILURE<br>IMPACT</div>
+      <div class="ceq-box-sub">Total business impact</div>
+    </div>
+  </div>
+
+  <!-- Columns -->
+  <div class="ceq-columns">
+
+    <!-- Column 1: Detection -->
+    <div class="ceq-col ceq-col-detect">
+      <div class="ceq-col-time">~60 min</div>
+      <div class="ceq-col-header">Detect &amp; Triage</div>
+      <ul class="ceq-list">
+        <li>Failure mode understood?</li>
+        <li>Are we making it worse?</li>
+        <li>What are the downstream dependencies?</li>
+        <li>Is there a time-sensitive business deadline?</li>
+        <li>What signals confirm the scope of impact?</li>
+        <li>Do we have enough to stop, isolate, or contain?</li>
+        <li>Is rollback still possible?</li>
+      </ul>
+    </div>
+
+    <!-- Columns 2+3: Decision Delay group with bracket -->
+    <div class="ceq-decision-group">
+      <div class="ceq-decision-bracket">Decision Delay</div>
+      <div class="ceq-decision-inner">
+
+        <!-- Column 2: Containment Decision -->
+        <div class="ceq-col ceq-col-contain">
+          <div class="ceq-col-time">~20–30 min</div>
+          <div class="ceq-col-header">Containment Decision</div>
+          <div class="ceq-badge">Immediate</div>
+          <p class="ceq-col-note">What do we do right now to stop the bleeding? Options depend on context — there is rarely one right answer.</p>
+          <ul class="ceq-list">
+            <li>Throttle traffic</li>
+            <li>Fail over regions</li>
+            <li>Switch to read-only</li>
+            <li>Isolate impacted customers</li>
+            <li>Stop background jobs</li>
+            <li>Disable integrations</li>
+            <li>Pause queues &amp; processors</li>
+            <li>Prevent bad data spread</li>
+            <li>Reduce functionality temporarily</li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Recovery Decision -->
+        <div class="ceq-col ceq-col-recover">
+          <div class="ceq-col-time">~60–90 min</div>
+          <div class="ceq-col-header">Recovery Decision</div>
+          <p class="ceq-col-note">Containment has bought you time. Now choose the safest path forward with the information available.</p>
+          <ul class="ceq-list">
+            <li>Rollback or fix forward?</li>
+            <li>Partial service or full outage?</li>
+            <li>Risk profile of each path?</li>
+            <li>Can we avoid making it worse?</li>
+            <li>Critical business deadlines?</li>
+            <li>Impacted dependencies?</li>
+            <li>Interim fix to restore service?</li>
+            <li>What assurance can we give the business?</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Column 4: Execute & Validate -->
+    <div class="ceq-col ceq-col-execute">
+      <div class="ceq-col-time">Parallel</div>
+      <div class="ceq-col-header">Execute &amp; Validate</div>
+
+      <div class="ceq-sub-section">
+        <div class="ceq-sub-header">Data Integrity Checks</div>
+        <ul class="ceq-list">
+          <li>Was data lost or duplicated?</li>
+          <li>Was data corrupted?</li>
+          <li>Was processing out of order?</li>
+          <li>Were downstream systems affected?</li>
+          <li>Are audit logs intact?</li>
+        </ul>
+      </div>
+
+      <div class="ceq-sub-section">
+        <div class="ceq-sub-header">Recovery Activities</div>
+        <ul class="ceq-list">
+          <li>Replay events / messages</li>
+          <li>Restore backups</li>
+          <li>Reconcile databases</li>
+          <li>Re-run failed jobs</li>
+          <li>Recover missing transactions</li>
+        </ul>
+      </div>
+
+      <div class="ceq-sub-section">
+        <div class="ceq-sub-header">Validation</div>
+        <ul class="ceq-list">
+          <li>Reconciliation reports</li>
+          <li>Checksum / count validation</li>
+          <li>Customer verification</li>
+          <li>Financial reconciliation</li>
+          <li>Business &amp; data owner sign-off</li>
+        </ul>
+      </div>
+
+      <div class="ceq-integrity-note">
+        Recovery is not complete until data integrity is verified
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Timing bar -->
+  <div class="ceq-timing-bar">
+    <span class="ceq-timing-label">Best case total window:</span>
+    <span class="ceq-timing-value">3–4 hours — from failure to recovery</span>
+  </div>
+
+</div>
+
+<hr />
+<h2 id="the-two-critical-risk-parameters">The Two Critical Risk Parameters</h2>
+<div class="card-grid">
+  <div class="card">
+    <h3>Impact Latency Window (ILW)</h3>
+    <p>The time between when a defect occurs and when a customer or regulator becomes aware of it. Maximising this window gives the team room to detect and contain before exposure becomes material.</p>
+  </div>
+  <div class="card">
+    <h3>Impact Amplification Window (IAW)</h3>
+    <p>The point at which an isolated defect begins to compound into widespread operational, financial, or reputational damage. Containment strategies must activate before this threshold is crossed.</p>
+  </div>
+</div>
+
+<hr />
+<h2 id="the-five-principles-of-cutover">The Five Principles of Cutover</h2>
+<div class="principle">
+<h3>1. Focus on the Grey Areas</h3>
+Start with what cannot be evaluated faithfully in QA. Where production conditions diverge, documentation becomes less dependable and experience becomes critical. These are the zones where surprises emerge. Test coverage metrics alone are not a proxy for safety.
+</div>
+
+<div class="principle">
+<h3>2. Prioritise Risk with Objective Scoring</h3>
+Intuition has limits, especially under deadline pressure. A structured framework such as Failure Mode and Effects Analysis (FMEA) imposes discipline: assess severity, likelihood, and detectability, then rank exposures accordingly. Prioritisation is a strategy.
+</div>
+
+<div class="principle">
+<h3>3. Reduce Customer Exposure</h3>
+Containment begins with volume control. The critical question is simple: must every transaction file be processed immediately, or can exposure be deliberately constrained? Reducing exposure converts potential crises into manageable operational issues.
+</div>
+
+<div class="principle">
+<h3>4. Maximise the Impact Latency Window</h3>
+Timing decisions are often treated as logistical details. They are strategic controls. If a cutover occurs just after account statements are issued, teams may have weeks to detect and correct issues before customers notice. Time is the most underappreciated risk control in large transformations.
+</div>
+
+<div class="principle">
+<h3>5. Align the Right Team for Cutover Night</h3>
+The team that builds the system is not the team that safely runs the cutover. Cutover night requires people who have lived through production crises — who carry historical memory, recognise failure patterns, know containment tactics, and can make calculated decisions when only 80% of the information is available.
+</div>
+
+<hr />
+<p><span class="section-label">Part 2 — The War Room Reality</span></p>
+<h2 id="when-systems-fail-at-2am">When Systems Fail at 2AM</h2>
+<blockquote>
+<p><em>At 2AM, when systems fail and 19 million customers are impacted, flawless designs matter less than having the right people in the room.</em></p>
+</blockquote>
+<p><strong>Transformation programs are designed in boardrooms. Cutover nights are survived in war rooms.</strong></p>
+<p>The skills required to design and test a complex transformation are fundamentally different from the skills required to run the cutover when things go wrong. At that moment, you don't need perfect designers or functional testers. You need people who have lived through a production crisis — accountable for live systems, able to recognise failure patterns, know containment tactics, and make calculated decisions with only 80% of the information available. BAU teams bring something project teams rarely have: historical memory, production instincts, and reusable knowledge — scripts, workarounds, and operational muscle memory that never appear in project documentation.</p>
+<h3 id="a-habit-from-level-1-support-still-applied-today">A Habit From Level 1 Support — Still Applied Today</h3>
+<p>One to two weeks before any major cutover, I sit with the support team and ask: what can go wrong? Do you have scripts ready for data integrity checks, reconciliation, impact analysis, and recovery validation?</p>
+<p>It sounds simple. But when a script runs against a production dataset at volume, it takes 20–30 minutes to return results. That window is breathing space. You are not scrambling under pressure — you are already calm, already analysing. By the time results come back, you have done half your thinking. The last thing you want during a production crisis is to start writing scripts after things have already failed.</p>
+<h3 id="the-cutover-response-model">The Cutover Response Model</h3>
+<div class="card-grid">
+<div class="card">
+<h3>1. Rapid Detection</h3>
+<p>Know within minutes, not hours, that something has gone wrong and what it's touching.</p>
+</div>
+<div class="card">
+<h3>2. Empowered Decision-Making</h3>
+<p>The room has the authority to act — no waiting on approvals that can't be reached at 2AM.</p>
+</div>
+<div class="card">
+<h3>3. Immediate Production Access</h3>
+<p>The people diagnosing the issue can also act on it, without a second team as a bottleneck.</p>
+</div>
+<div class="card">
+<h3>4. Operational Workarounds</h3>
+<p>Pre-built scripts and containment options ready before the crisis, not written during it.</p>
+</div>
+</div>
+
+<p>In the best case: 60 minutes to understand the issue, 20–30 to decide on containment, 60 to determine rollback or fix-forward. Sometimes the right call is an interim fix — get the lights back on, recover the critical data, then immediately work a clear plan for the remaining 20%.</p>
+<h3 id="someone-whose-sole-job-is-managing-the-room">Someone Whose Sole Job Is Managing the Room</h3>
+<p>Not the technical lead. Not the program manager who has been running on empty for 18 hours. Someone trusted and calm — focused on containing the noise and giving stakeholders the right update at the right time. Too little communication and the business panics. Too much and it becomes unproductive. That balance is a skill in itself.</p>
+<div class="foundation-banner">
+<p>Organisations plan the implementation window. Few plan the recovery window.</p>
+</div>
+
+<p>A 12-hour cutover can easily stretch to 24 or 36 hours when things go wrong. The final lap of the relay doesn't care how fast you ran the first three legs — only how you finish matters.</p>
+<p>And here is what most people forget: if you have the right team and navigate a cutover problem well, it stops being a negative experience. The team learns together, confidence builds, and that knowledge becomes part of the organisation's institutional memory. What you learn from a live production issue sits in your head in a way no training course ever replicates.</p>
+<p><strong>The best cutover teams are not the ones that never had problems. They are the ones who faced problems — and came out stronger.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2026 Ranga Jayasinghe · Melbourne, Australia · <a href="mailto:ranga.p.jayasinghe@outlook.com">Contact</a> · Independent analysis is personal and does not represent an employer.
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/ranga-jayasinghe" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

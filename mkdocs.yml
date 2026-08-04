@@ -26,6 +26,7 @@ markdown_extensions:
   - md_in_html
 
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/ranga-jayasinghe
